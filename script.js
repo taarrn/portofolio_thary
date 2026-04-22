@@ -40,20 +40,7 @@ function closeDrawer() {
   document.getElementById('navToggle').classList.remove('open');
 }
 
-/* ===== PROFILE PHOTO ===== */
-document.getElementById('profileInput').addEventListener('change', function() {
-  if (this.files && this.files[0]) {
-    const reader = new FileReader();
-    reader.onload = e => {
-      const img   = document.getElementById('profileImg');
-      const inner = document.getElementById('profileInner');
-      img.src = e.target.result;
-      inner.classList.add('has-photo');
-    };
-    reader.readAsDataURL(this.files[0]);
-    this.value = '';
-  }
-});
+
 
 /* ===== SKILLS PROGRESS BAR ANIMATION ===== */
 function animateSkills() {
