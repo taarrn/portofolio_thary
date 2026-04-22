@@ -222,9 +222,10 @@ footer { text-align:center; padding:36px 24px; border-top:1px solid var(--border
 footer span { font-family:'Playfair Display',serif; font-style:italic; color:var(--rose); }
 
 @media (max-width:860px) {
-  #hero { text-align:center; padding:120px 24px 60px; flex-direction:column; }
+  #hero { text-align:center; padding:100px 24px 60px; flex-direction:column; align-items:center; }
   .hero-eyebrow { justify-content:center; }
-  .hero-right { display:none; }
+  .hero-right { display:flex; justify-content:center; order:-1; margin-bottom:8px; }
+  .profile-frame { width:180px; height:220px; }
   .hero-social { display:flex; justify-content:center; }
   .section-wrap { padding:80px 24px; }
   nav#navbar { padding:16px 24px; }
