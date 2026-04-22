@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- MOBILE DRAWER -->
+<div class="nav-drawer" id="navDrawer">
+  <a href="#hero"     onclick="closeDrawer()">Home</a>
+  <a href="#biodata"  onclick="closeDrawer()">Biodata</a>
+  <a href="#skills"   onclick="closeDrawer()">Skills</a>
+  <a href="#projects" onclick="closeDrawer()">Projects</a>
+  <a href="#contact"  onclick="closeDrawer()">Kontak</a>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Thary</a>
+  <ul class="nav-links">
+    <li><a href="#biodata">Biodata</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle" onclick="toggleDrawer()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span>Personal Portfolio</span></div>
+    <h1 class="hero-name">Thary Nabila<em>Jannatul Rizki</em></h1>
+    <div class="hero-social">
+      <a href="https://instagram.com/thrynbla" target="_blank" rel="noopener" class="hero-ig-btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Instagram
+      </a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="profile-frame">
+      <div class="profile-inner has-photo" id="profileInner" onclick="document.getElementById('profileInput').click()">
+        <img id="profileImg" src="tes.jpg" alt="Profile" style="display:block"/>
+        <div class="profile-placeholder">
+          <div class="profile-placeholder-icon">🖼️</div>
+          <div class="profile-placeholder-text">Klik untuk<br/>upload foto</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<input type="file" id="profileInput" accept="image/*" style="display:none"/>
+
+<!-- BIODATA -->
+<section id="biodata">
+  <div class="section-wrap">
+    <div class="section-head">
+      <p class="label">About</p>
+      <h2 class="section-title">Biodata</h2>
+    </div>
+    <div class="bio-layout">
+      <div class="bio-cell"><div class="bio-cell-label">Nama</div><div class="bio-cell-val">Thary Nabila Jannatul Rizki</div></div>
+      <div class="bio-cell"><div class="bio-cell-label">Tanggal Lahir</div><div class="bio-cell-val">19 Mei 2006</div></div>
+      <div class="bio-cell"><div class="bio-cell-label">Pendidikan</div><div class="bio-cell-val">Kuliah</div></div>
+      <div class="bio-cell"><div class="bio-cell-label">Minat</div><div class="bio-cell-val">Nonton · Musik · Buku · Baking</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-wrap">
+    <div class="section-head">
+      <p class="label">Kemampuan</p>
+      <h2 class="section-title">My <em>Skills</em></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">🌐</div>
+        <div class="skill-name">HTML</div>
+        <div class="skill-category">Web Development</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--pct:80%"></div></div>
+        <div class="skill-pct">80%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🎨</div>
+        <div class="skill-name">CSS</div>
+        <div class="skill-category">Web Development</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--pct:70%"></div></div>
+        <div class="skill-pct">70%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-category">Web Development</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--pct:70%"></div></div>
+        <div class="skill-pct">70%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">✏️</div>
+        <div class="skill-name">Figma</div>
+        <div class="skill-category">UI/UX Design</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--pct:85%"></div></div>
+        <div class="skill-pct">85%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🖼️</div>
+        <div class="skill-name">Canva</div>
+        <div class="skill-category">Desain Grafis</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--pct:90%"></div></div>
+        <div class="skill-pct">90%</div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Microsoft Office</div>
+        <div class="skill-category">Produktivitas</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" style="--pct:88%"></div></div>
+        <div class="skill-pct">88%</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-wrap">
+    <div class="section-head">
+      <p class="label">What I've Built</p>
+      <h2 class="section-title">My Projects</h2>
+    </div>
+    <div class="projects-grid">
+      <a class="project-card" href="https://www.figma.com/proto/JJWNtApsRpgK4LxM821fkl/KALA-PATRA?node-id=0-1&p=f&t=FQfGOsNw6MI0ps4R-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=72%3A1579&show-proto-sidebar=1" target="_blank" rel="noopener">
+        <div class="project-thumb">
+          <img src="kalapatra.png" alt="Kala Patra" style="width:100%;height:100%;object-fit:cover;object-position:top;"/>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">UI/UX · Figma</span>
+          <div class="project-title">Kala Patra</div>
+          <p class="project-desc">Desain prototype aplikasi berbasis Figma. Eksplorasi antarmuka yang estetik dan fungsional dengan konsep yang matang.</p>
+          <div class="project-link">Lihat Prototype <span>→</span></div>
+        </div>
+      </a>
+      <a class="project-card" href="https://waazcode.github.io/Kalkulator_UTS_PBW/" target="_blank" rel="noopener">
+        <div class="project-thumb">
+          <img src="kalkulator.png" alt="Kalkulator UTS PBW" style="width:100%;height:100%;object-fit:cover;object-position:top;"/>
+        </div>
+        <div class="project-info">
+          <span class="project-tag">Web · HTML CSS JS</span>
+          <div class="project-title">Kalkulator UTS PBW</div>
+          <p class="project-desc">Aplikasi kalkulator web yang dibangun sebagai tugas UTS mata kuliah Pemrograman Berbasis Web. Fungsional dan interaktif.</p>
+          <div class="project-link">Buka Website <span>→</span></div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-wrap">
+    <div class="section-head">
+      <p class="label">Get In Touch</p>
+      <h2 class="section-title">Kontak & <em>Hubungi</em></h2>
+    </div>
+
+    <div class="social-links">
+
+      <!-- INSTAGRAM -->
+      <a href="https://instagram.com/thrynbla" target="_blank" rel="noopener" class="social-card">
+        <div class="social-icon-wrap ig">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div class="social-info">
+          <div class="social-platform">Instagram</div>
+          <div class="social-handle">@thrynbla</div>
+        </div>
+        <span class="social-arrow">→</span>
+      </a>
+
+      <!-- GITHUB -->
+      <a href="https://github.com/taarrn" target="_blank" rel="noopener" class="social-card">
+        <div class="social-icon-wrap gh">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+        </div>
+        <div class="social-info">
+          <div class="social-platform">GitHub</div>
+          <div class="social-handle">taarrn</div>
+        </div>
+        <span class="social-arrow">→</span>
+      </a>
+
+      <!-- EMAIL -->
+      <div class="social-card" onclick="openEmailModal()" style="cursor:pointer;">
+        <div class="social-icon-wrap email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><polyline points="2,4 12,13 22,4"/></svg>
+        </div>
+        <div class="social-info">
+          <div class="social-platform">Email</div>
+          <div class="social-handle">tharynabila2@gmail.com</div>
+        </div>
+        <span class="social-arrow">→</span>
+      </div>
+
+    </div>
+
+    <!-- EMAIL MODAL -->
+    <div class="email-modal-overlay" id="emailModal" onclick="closeEmailModal(event)">
+      <div class="email-modal-box">
+        <button class="email-modal-close" onclick="closeEmailModal()">✕</button>
+        <div class="email-modal-header">
+          <div class="email-modal-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><polyline points="2,4 12,13 22,4"/></svg>
+          </div>
+          <div>
+            <div class="email-modal-title">Kirim Pesan</div>
+            <div class="email-modal-sub">tharynabila2@gmail.com</div>
+          </div>
+        </div>
+        <div class="email-form-group">
+          <label>Nama kamu</label>
+          <input type="text" id="emailName" placeholder="Tulis namamu..." maxlength="60" autocomplete="off"/>
+        </div>
+        <div class="email-form-group">
+          <label>Subjek</label>
+          <input type="text" id="emailSubject" placeholder="Subjek pesan..." maxlength="80" autocomplete="off"/>
+        </div>
+        <div class="email-form-group">
+          <label>Pesan</label>
+          <textarea id="emailBody" placeholder="Tulis pesanmu..." maxlength="1000"></textarea>
+        </div>
+        <button class="email-send-btn" onclick="sendEmail()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Kirim Pesan
+        </button>
+        <div class="email-notice" id="emailNotice"></div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<footer><p><span>Thary</span> &nbsp;·&nbsp; Banda Aceh © 2026</p></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
